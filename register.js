@@ -13,7 +13,7 @@ async function signup() {
         body: JSON.stringify(customer)
       };
       try {
-        let response = await fetch(getHost() + "/signup", request);
+        let response = await fetch("https://lab10-jhdk.onrender.com" + "/signup", request);
         if(response.status == 200) {  
             alert("The registration was successful!")
             location.href = "login.html";
